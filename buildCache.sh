@@ -1,2 +1,2 @@
 #!/usr/bin/env bash
-docker build --rm -t michaelcoll/odroid-c2-plex .
+docker build --rm -t michaelcoll/docker-armhf-plex .
