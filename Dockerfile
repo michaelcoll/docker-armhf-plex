@@ -11,8 +11,8 @@ RUN wget -O - https://dev2day.de/pms/dev2day-pms.gpg.key | apt-key add - && \
 
 VOLUME ["/config","/media"]
 
-ENV HOME=/config
+ENV HOME=/config TERM="xterm" LANG="C.UTF-8" LC_ALL="C.UTF-8"
 
-EXPOSE 32400
+EXPOSE 32400/tcp 3005/tcp 8324/tcp 32469/tcp 1900/udp 32410/udp 32412/udp 32413/udp 32414/udp
 
 CMD ["/usr/sbin/start_pms"]
